@@ -55,11 +55,13 @@ class JustAudioBackground {
       androidResumeOnClick: androidResumeOnClick,
       androidNotificationChannelId: androidNotificationChannelId,
       androidNotificationChannelName: androidNotificationChannelName,
-      androidNotificationChannelDescription: androidNotificationChannelDescription,
+      androidNotificationChannelDescription:
+        androidNotificationChannelDescription,
       notificationColor: notificationColor,
       androidNotificationIcon: androidNotificationIcon,
       androidShowNotificationBadge: androidShowNotificationBadge,
-      androidNotificationClickStartsActivity: androidNotificationClickStartsActivity,
+      androidNotificationClickStartsActivity:
+      androidNotificationClickStartsActivity,
       androidNotificationOngoing: androidNotificationOngoing,
       androidStopForegroundOnPause: androidStopForegroundOnPause,
       artDownscaleWidth: artDownscaleWidth,
@@ -99,11 +101,13 @@ class _JustAudioBackgroundPlugin extends JustAudioPlatform {
         androidResumeOnClick: androidResumeOnClick,
         androidNotificationChannelId: androidNotificationChannelId,
         androidNotificationChannelName: androidNotificationChannelName,
-        androidNotificationChannelDescription: androidNotificationChannelDescription,
+        androidNotificationChannelDescription:
+          androidNotificationChannelDescription,
         notificationColor: notificationColor,
         androidNotificationIcon: androidNotificationIcon,
         androidShowNotificationBadge: androidShowNotificationBadge,
-        androidNotificationClickStartsActivity: androidNotificationClickStartsActivity,
+        androidNotificationClickStartsActivity:
+          androidNotificationClickStartsActivity,
         androidNotificationOngoing: androidNotificationOngoing,
         androidStopForegroundOnPause: androidStopForegroundOnPause,
         artDownscaleWidth: artDownscaleWidth,
@@ -117,6 +121,7 @@ class _JustAudioBackgroundPlugin extends JustAudioPlatform {
   }
 
   _JustAudioPlayer? _player;
+  String? _playerId;
 
   _JustAudioBackgroundPlugin();
 
@@ -146,7 +151,8 @@ class _JustAudioBackgroundPlugin extends JustAudioPlatform {
   }
 
   @override
-  Future<DisposeAllPlayersResponse> disposeAllPlayers(DisposeAllPlayersRequest request) async {
+  Future<DisposeAllPlayersResponse> disposeAllPlayers(
+      DisposeAllPlayersRequest request) async {
     final player = _player;
     _player = null;
     await player?.release();
