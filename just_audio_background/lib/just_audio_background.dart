@@ -56,12 +56,12 @@ class JustAudioBackground {
       androidNotificationChannelId: androidNotificationChannelId,
       androidNotificationChannelName: androidNotificationChannelName,
       androidNotificationChannelDescription:
-        androidNotificationChannelDescription,
+          androidNotificationChannelDescription,
       notificationColor: notificationColor,
       androidNotificationIcon: androidNotificationIcon,
       androidShowNotificationBadge: androidShowNotificationBadge,
       androidNotificationClickStartsActivity:
-      androidNotificationClickStartsActivity,
+          androidNotificationClickStartsActivity,
       androidNotificationOngoing: androidNotificationOngoing,
       androidStopForegroundOnPause: androidStopForegroundOnPause,
       artDownscaleWidth: artDownscaleWidth,
@@ -102,12 +102,12 @@ class _JustAudioBackgroundPlugin extends JustAudioPlatform {
         androidNotificationChannelId: androidNotificationChannelId,
         androidNotificationChannelName: androidNotificationChannelName,
         androidNotificationChannelDescription:
-          androidNotificationChannelDescription,
+            androidNotificationChannelDescription,
         notificationColor: notificationColor,
         androidNotificationIcon: androidNotificationIcon,
         androidShowNotificationBadge: androidShowNotificationBadge,
         androidNotificationClickStartsActivity:
-          androidNotificationClickStartsActivity,
+            androidNotificationClickStartsActivity,
         androidNotificationOngoing: androidNotificationOngoing,
         androidStopForegroundOnPause: androidStopForegroundOnPause,
         artDownscaleWidth: artDownscaleWidth,
